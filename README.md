@@ -2,7 +2,6 @@
 ![Build Status](https://img.shields.io/github/forks/PADeCI/covid19-mx-data)
 ![Build Status](https://img.shields.io/github/stars/PADeCI/covid19-mx-data)
 ![Build Status](https://img.shields.io/github/license/PADeCI/covid19-mx-data)
-![Build Status](https://img.shields.io/twitter/url?style=social)
 
 <p align="center">
 <img src = "https://github.com/PADeCI/covid19-mx-data/blob/master/logo.png" alt="logo" width="300"/>
@@ -11,15 +10,15 @@
 _____
 
 # Datos de COVID-19 en Mexico (versión en español) 
-# Sobre este repositorio :open_book:
+# Sobre este repositorio
 [PADeCI](https://twitter.com/PADeCI1) es un equipo de investigación interdisciplinario ubicado en el [CIDE Región Centro](https://www.facebook.com/cideregioncentro) en Aguascalientes, México. Actualmente, uno de sus principales proyectos involucra el procesamiento, el análisis y la creación de datos sobre COVID-19 en México, necesarios para la toma de decisiones basada en evidencia en contextos de incertidumbre. Este repositorio ofrece datos de la propagación de la pandemia de COVID-19 en México, incluye información sobre el número de personas que se han sometido a la prueba de COVID-19, con síntomas (sospechosas), enfermas (confirmadas), hospitalizadas, fallecidas, en cuidados intensivos e intubadas. Los datos son abiertos para ser utilizados por cualquier persona, otorgando el crédito adecuado.
 
 Este repositorio corresponde a la primera etapa del análisis de datos: el proceso de limpieza. La información generada en esta etapa es la fuente primaria de información para el modelaje matemático, las proyecciones y las publicaciones de PADeCI. Además de ser una herramenta para la investigación de PADeCI, el contenido de este repositorio sirve para que cualquier persona interesada replique el proceso de limpieza de datos hecho por el equipo de PADeCI, siguiendo así los principios científicos de _transparencia_ y _replicabilidad_. 
 
-# Requisitos :computer:
+# Requisitos
 R version 3.6.2 (ésta es la versión recomendada para evitar errores en el código, también conocidos como _bugs_). 
 
-# Uso :inbox_tray:
+# Uso 
 Cualquier persona puede utilizar los datos creados por PADeCI o replicar el proceso de limpieza, ya sea clonando este repositorio en su computadora o descargando archivos específicos. Los datos también se pueden utilizar sin necesidad de descargar, ni clonar el respositorio: basta con utilizar el url que GitHub provee de la base de datos específica que se desea utilizar en formato raw, a continuación se presenta un ejemplo de cómo acceder a los datos usando este método.
 
 ## Ejemplo de uso de los datos (extracción directa del url con R)
@@ -59,7 +58,7 @@ View(mi_base)
 ```
 A partir de este punto la persona puede decidir qué hacer con los datos y proceder a realizar su propio análisis. 
 
-# Descripción de las carpetas :card_index_dividers:
+# Descripción de las carpetas 
 **1. Analysis:** Esta carpeta contiene dos archivos de código en R que lidian con la limpieza de datos a nivel municipal y a nivel estatal (aquí se incluye también información nacional y de la Zona Metropolinata del Valle de México o _ZMVM_).
 
 **2. Automatization:** La carpeta de de automatización incluye varios archivos de código en R que automatizan tareas tales como descargar los datos oficiales, compararlos con los datos generados por los códigos de limpieza e incluso generar reportes diarios, entre otros.
@@ -75,10 +74,10 @@ A partir de este punto la persona puede decidir qué hacer con los datos y proce
   - También información de la Zona Metropolitana del Valle de México (ZMVM)
 
 
-# Cómo citar este respositorio :handshake:
+# Cómo citar este respositorio
 En caso de utilizar los datos de este repositorio, favor de referenciar el trabajo de la siguiente manera: (Aquí se agregará el DOI generado por Zenodo) 
 
-# Autoras y autores :writing_hand:
+# Autoras y autores
 
 Yadira Peralta             | [GitHub](https://github.com/yadira-peralta) | [Twitter](https://twitter.com/YadiraPerTor) |
 ------------ | ------------- | -------------
@@ -89,20 +88,20 @@ Hirvin Díaz                | [GitHub](https://github.com/HirvinDiaz) | [Twitter
 Regina Isabel Medina       | [GitHub](https://github.com/RMedina19) | [Twitter](https://twitter.com/regi_medina) |
 Fernando Alarid-Escudero   | [GitHub](https://github.com/feralaes) | [Twitter](https://twitter.com/feralaes) |
 
-# Licencia de uso :scroll:
+# Licencia de uso
 El contenido de este repositorio debe utilizarse bajo las condiciones de la [licencia MIT](LICENSE).
 _____
 
 # Mexico's COVID-19 data (english version) 
-# About this repository :open_book:
+# About this repository 
 [PADeCI](https://twitter.com/PADeCI1) is an interdisciplinary research team based at [CIDE Región Centro](https://www.facebook.com/cideregioncentro) in Aguascalientes, Mexico. Currently, one of it's main projects concerns the processing, analysis and creation of COVID-19 data for Mexico, necessary for evidence-based decision making amid the context of uncertainty. This repository offer data regarding propagation of COVID-19's pandemic in Mexico. This includes number of people who are symptomatics (suspected cases), sick (confirmed cases), hospitalized; also the number of people who have died, taken into Intensive Care Units (ICU) and who needed ventilators. Data is open for any person to use, as long as the appropiate credit is given. 
 
 This respository correspond to the first stage of data analysis: the cleaning process. The data that is generated at this stage is the primary source of information that is used in PADeCI's mathematical modeling,  projections and publications. Besides it being a tool for PADeCI's research, this respository's content is useful for any person who is interested in replicating the cleaning process doing by PADeCI's team, following the scientific principles of _transparency_ and replicability.
 
-# Requirements :computer:
+# Requirements 
 R version 3.6.2 (this version is recommended to avoid potential bugs) 
 
-# Usage :inbox_tray:
+# Usage 
 Any user can either clone this repository in its own computer or download specific files in order to replicate PADeCI's job. Data can also be accesed without the need of downloading the whole repository nor any file. It suffices with using the url of the raw format provided by GitHub of the data base of interest. A quick example of how to retrive data with the last method is shown below. 
 
 ## Use example (extracting data directly from a url)
@@ -129,7 +128,7 @@ The following command is used to create and R object that will contain the data 
 ```r
 my_data <- read.csv("https://raw.githubusercontent.com/PADeCI/covid19-mx-data/master/data/state/covid_ssa_state_2020-06-23.csv?token=AMIIVUNFFZ5DS5ZKVCAK3SC66PWQS")
 ```
-4. Explor data
+4. Explore data
 For a quick data exploration, the `head()` command  can be used; in order to see the whole data frame, `View()` command must be used. Following our example:
 
 ```r
@@ -138,7 +137,7 @@ View(my_data)
 ```
 At this stage, the person can decide what to do with data and proceed with her own analysis. 
 
-# Folders' description :card_index_dividers:
+# Folders' description
 **1. Analysis:** This folder containts two R scripts which manage data wranglig at county level and state level (which includes nation wide information as well as Mexico City Metropolitan Area, or _MCMA_, data). 
 
 **2. Automatization:** The automatization folder include several scripts that automate tasks such as downloading official data and comparing it with the data generated by the wranging scripts and even generating daily reports, among others.  
@@ -153,7 +152,7 @@ At this stage, the person can decide what to do with data and proceed with her o
   - It includes national data
   - It also includes Mexico City Metropolitan Area (MCMA) data
   
-# How to cite this repository :handshake:
+# How to cite this repository
 In case of using the respository's data, please cite the work using the following format: (Insert Zenodo's DOI link)  
 
 # Authors :writing_hand:
@@ -166,5 +165,5 @@ Hirvin Díaz                | [GitHub](https://github.com/HirvinDiaz) | [Twitter
 Regina Isabel Medina       | [GitHub](https://github.com/RMedina19) | [Twitter](https://twitter.com/regi_medina) |
 Fernando Alarid-Escudero   | [GitHub](https://github.com/feralaes) | [Twitter](https://twitter.com/feralaes) |
 
-# License :scroll:
+# License
 This repository's content must be used under the terms and conditions of the [MIT License](LICENSE)
