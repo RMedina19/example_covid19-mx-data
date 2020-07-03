@@ -155,7 +155,8 @@ At this stage, the person can decide what to do with data and proceed with her o
 # How to cite this repository
 In case of using the respository's data, please cite the work using the following format: (Insert Zenodo's DOI link)  
 
-# Authors :writing_hand:
+# Authors 
+
 Yadira Peralta             | [GitHub](https://github.com/yadira-peralta) | [Twitter](https://twitter.com/YadiraPerTor) |
 ------------ | ------------- | -------------
 Mariana Fernández          | [GitHub](https://github.com/marianafdz465) | [Twitter](https://twitter.com/marianafdz_97) |
